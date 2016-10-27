@@ -1,0 +1,14 @@
+.view {
+
+}
+
+#title {
+    -fx-font-size: 1.8em;
+    -fx-text-fill: -primary-swatch-900;
+}
+
+.button {
+    -fx-alignment: CENTER_LEFT;
+    -fx-graphic-text-gap: 20;
+    -fx-padding: 10;
+}

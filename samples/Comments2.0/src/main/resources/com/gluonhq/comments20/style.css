@@ -1,0 +1,12 @@
+.avatar {
+    -charm-radius: 22;
+}
+
+.avatar.tablet {
+    -charm-radius: 31;
+}
+
+.avatar > .decoration {
+    -fx-stroke: -primary-swatch-700; 
+    -fx-stroke-width: 1;
+}

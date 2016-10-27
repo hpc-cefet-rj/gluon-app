@@ -12,3 +12,6 @@
 
 [http://docs.gluonhq.com/samples/codevault/](http://docs.gluonhq.com/samples/codevault/)
 
+## Plugin para Eclipse
+
+[http://download.gluonhq.com/tools/eclipse/release](http://download.gluonhq.com/tools/eclipse/release)

@@ -1,0 +1,21 @@
+.avatar {
+    -charm-radius: 28;
+}
+
+.avatar.tablet {
+    -charm-radius: 35;
+}
+
+.avatar > .decoration {
+    -fx-stroke: -primary-swatch-700; 
+    -fx-stroke-width: 2;
+}
+
+.avatar.tablet > .decoration {
+    -fx-stroke: -primary-swatch-700; 
+    -fx-stroke-width: 3;
+}
+
+.avatar:disabled > .decoration {
+    -fx-stroke: lightgrey;
+}

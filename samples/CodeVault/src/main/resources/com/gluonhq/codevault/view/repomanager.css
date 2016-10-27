@@ -1,0 +1,90 @@
+.view {
+    -new-black: #4D5052;
+
+    -repoViewBackgroundColor: #4D5052;
+    -repoViewSelectionBkgColor: #393939;
+    -repoViewTextColor: #BFC7C7;
+    -repoViewTopicColor: lightblue;
+    -repoViewCurrentBranchColor: white;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-padding: 0 0 -2 0; /*thin divider*/
+}
+
+.ref-icon {
+    -fx-text-fill: -new-black;
+    -fx-padding: -10 -3 -5 0;
+}
+
+
+/*  Repository TableView */
+
+.label.tag-ref {
+    -fx-background-color: #fff3cc;
+    -fx-border-color: -new-black;
+    -fx-text-fill: -new-black;
+    -fx-padding: 0 4 0 4;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.label.branch-ref {
+    -fx-background-color: #b0f1ff;
+    -fx-border-color: -new-black;
+    -fx-text-fill: -new-black;
+    -fx-padding: 0 4 0 4;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+.label.unknown-ref {
+    -fx-background-color: #e58aff;
+    -fx-border-color: -new-black;
+    -fx-text-fill: -new-black;
+    -fx-padding: 0 4 0 4;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+}
+
+
+/* Repository Info TreeView*/
+
+.repoViewTree   {
+    /* -fx-font-weight: bold;  */
+    -fx-font-size: 1.04em;
+}
+
+.repoViewCell,
+.repoViewCell > .ref-icon {
+    -fx-background-color: -repoViewBackgroundColor;
+    -fx-text-fill: -repoViewTextColor;
+    -fx-graphic-text-gap: 5;
+}
+
+.repoViewCell > .text,
+.repoViewCell > .ref-icon > .text {
+    -fx-effect: dropshadow( one-pass-box, black, 0,0,1,1 );
+}
+
+
+.repoViewCell:selected   {
+    -fx-background-color: -repoViewSelectionBkgColor;
+}
+
+.repoViewCell:selected > .ref-icon {
+    -fx-text-fill: -repoViewTextColor;
+    -fx-background-color: -repoViewSelectionBkgColor;
+}
+
+.repoViewCell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -repoViewTextColor;
+}
+
+.repoViewCell.topic {
+    -fx-text-fill: -repoViewTopicColor;
+}
+
+.repoViewCell.currentBranch  {
+    -fx-text-fill: -repoViewCurrentBranchColor;
+}

@@ -1,0 +1,7 @@
+.view {
+
+}
+
+.button.icon-toggle {
+    -fx-text-fill: -primary-swatch-900;
+}
